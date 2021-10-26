@@ -1,23 +1,14 @@
-Attend 30 secondes
-Appel de la fonction AllumeRaspberry()
-Attend 1 minute
 Appel de la fonction AllumeCamera()
-Attend 30 secondes
 Appel de la fonction Capteurs()
+Attend 1 min
 Tant que l’altitude est supérieure à 5km ou que l’altitude croit :
       Appel de la fonction Capteurs()
-      Appel de la fonction EnregistreValeurs()
       Attend 10 secondes
 Appel de la fonction EteintCamera()
 Tant que l’altitude décroit :
       Appel de la fonction Capteurs()
-      Appel de la fonction EnregistreValeurs()
       Attend 10 secondes
 Appel de la fonction EteintRaspberry()
-Compteur = 0
-Tant que True :
-      Appel de la fonction ChangementEtatLED()
-      Attend 1 seconde
 
 
 
@@ -28,7 +19,7 @@ Fonctions :
 
 AllumeRaspberry()               pas d'entrée ni de sortie. Allume le Raspberry Pi.
 AllumeCamera()                  pas d'entrée ni de sortie. Allume la caméra et lance l'enregistrement.
-Capteurs()                      pas d'entrée. Renvoie une liste de valeurs avec température et humidité.
+Capteurs()                      pas d'entrée. Renvoie l'altitude.
 EnregistreValeurs()             prend en entrée la dernière série des valeurs des capteurs et les enregistre dans un fichier sur la carte SD. pas de sortie.
 EteintCamera()                  pas d'entrée ni de sortie. Eteint la caméra.
 EteintRaspberry()               pas d'entrée ni de sortie. Eteint le Raspberry Pi.
